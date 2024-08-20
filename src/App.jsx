@@ -1,17 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import SignIn from './pages/signIn';
+import Navbar from './components/layout/Navbar';
 
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-     
-     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ipsa facilis nihil fuga similique doloribus numquam, ex quia. Consectetur nisi velit voluptate laboriosam ipsum distinctio mollitia architecto quisquam vero dolorum.</p>
-    </>
-  )
-}
+    <div>
+      
+      <Routes>
+        {/* <Route path="/" element={<DeliveredMothers />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/navbar" element={<Navbar />} />
 
-export default App
+      </Routes>
+     
+    </div>
+  );
+};
+
+export default App;
