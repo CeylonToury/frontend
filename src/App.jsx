@@ -21,11 +21,11 @@ const App = () => {
         {/* <Route path="/signin" element={<SignIn />} /> */}
         {/* <Route path="*" element={<NotFound />} /> */}
 
-        <Route element={<PrivateRoute allowedRoles={['ADMIN', 'CUSTOMER', 'GUIDE', 'HOTEL']} />}>
+        <Route element={<PrivateRoute />}>
           <Route path="/" element={<AppLayout />}>
             <Route path="customer/*" element={<CustomerRoutes />} />
             <Route path="admin/*" element={<AdminRoutes />} />
-            <Route path="guide/*" element={<GuideRoutes />} />
+            {/* <Route path="guide/*" element={<GuideRoutes />} /> */}
             <Route path="hotel/*" element={<HotelRoutes />} />
           </Route>
         </Route>

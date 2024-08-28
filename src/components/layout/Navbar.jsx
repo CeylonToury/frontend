@@ -124,12 +124,12 @@ const AppHeader = ({ onMenuClick }) => {
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img
+        {/* <img
           src={logo}
           alt="Logo"
           style={{ height: '50px', cursor: 'pointer' }}
           onClick={toggleSidebar}
-        />
+        /> */}
         {!isSidebarFolded && (
           <span style={{ color: '#967AA1', fontSize: '24px', marginLeft: '5px' }}>
             MaternEase
