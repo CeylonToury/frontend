@@ -132,7 +132,7 @@ const AppHeader = ({ onMenuClick }) => {
         /> */}
         {!isSidebarFolded && (
           <span style={{ color: '#967AA1', fontSize: '24px', marginLeft: '5px' }}>
-            MaternEase
+            CeylonToury
           </span>
         )}
       </div>
