@@ -26,8 +26,8 @@ const { Sider } = Layout;
 const { SubMenu } = Menu;
 const iconStyle = { fontSize: "24px", color: "#4e5052" };
 const selectedStyle = {
-  backgroundColor: "#D5C6E0",
-  color: "#967aa1",
+  backgroundColor: "#ffffff",
+  color: "#0AD1C8",
 };
 const selectedFontColor = { color: "#967aa1" };
 
@@ -150,7 +150,7 @@ const Sidebar = ({ collapsed, userType }) => {
             left: 0,
             top: 64,
             bottom: 0,
-            backgroundColor: "#f7f7f7", // Ensure consistent background color
+            backgroundColor: "#0B6477", // Ensure consistent background color
           }}
           trigger={null}
       >

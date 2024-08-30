@@ -113,7 +113,7 @@ const AppHeader = ({ onMenuClick }) => {
     <Header
       className="header"
       style={{
-        backgroundColor: '#f7f7f7',
+        backgroundColor: '#0B6477',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -131,19 +131,19 @@ const AppHeader = ({ onMenuClick }) => {
           onClick={toggleSidebar}
         /> */}
         {!isSidebarFolded && (
-          <span style={{ color: '#967AA1', fontSize: '24px', marginLeft: '5px' }}>
-            CeylonToury
-          </span>
+         <span style={{ color: '#FFFFFF', fontSize: '24px', marginLeft: '5px', fontWeight: 'bold' }}>
+         CeylonToury
+       </span>
         )}
       </div>
-      <div style={{ flex: 1, textAlign: 'center', color: '#4e5052', fontSize: '14px' }}>
+      <div style={{ flex: 1, textAlign: 'center', color: '#FFFFFF', fontSize: '14px' }}>
         <span style={{ marginRight: '20px' }}>{formattedDate}</span>
         <span>{formattedTime}</span>
       </div>
       <Space size="middle">
-        <NotificationsOutlinedIcon style={{ fontSize: '20px', color: '#4e5052' }} />
+        <NotificationsOutlinedIcon style={{ fontSize: '20px', color: '#FFFFFF' }} />
         <Dropdown overlay={menu} placement="bottomRight">
-          <AccountCircleOutlinedIcon style={{ cursor: 'pointer', fontSize: '35px', color: '#4e5052' }} />
+          <AccountCircleOutlinedIcon style={{ cursor: 'pointer', fontSize: '35px', color: '#FFFFFF' }} />
         </Dropdown>
       </Space>
     </Header>
